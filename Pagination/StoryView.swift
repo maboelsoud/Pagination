@@ -9,7 +9,7 @@
 import UIKit
 
 
-@IBDesignable class StoryView: UIView, namedClass {
+@IBDesignable class StoryView: UIView {
     
 //    
 //    @IBOutlet weak var titleLabel: UILabel!
@@ -17,7 +17,6 @@ import UIKit
 //    @IBOutlet weak var myButton: UIButton!
       var view:UIView!
 
-    var named: namedClass
 //    @IBInspectable var mytitleLabelText: String?{
 //        get{ return titleLabel.text
 //        }
@@ -65,25 +64,11 @@ import UIKit
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        loadClass()
         
         println( _stdlib_getDemangledTypeName(self))
         setup()
     }
     
-    func loadClass(){
-
-        var str = "Hello, playground"
- 
-        let rangeOfHello = Range(start: str.startIndex,
-                         end: advance(str.startIndex, 5))
-        let helloStr = str.substringWithRange(rangeOfHello)
-        
-        helloStr //"Hello"
-        
-        // supposed to be overridden
-        //namedClass = self//"StoryView"
-    }
 
     
     func setup()
@@ -99,18 +84,11 @@ import UIKit
     func loadViewFromNib() -> UIView
     {
         let bundle = NSBundle(forClass:self.dynamicType)
-        let nib = UINib(nibName: namedClass.getName(self)(), bundle: bundle)
+        let nib = UINib(nibName: "StoryView", bundle: bundle)
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         
         return view
     }
     
-    func getName() -> String {
-        return "StoryView"
-    }
     
-}
-
-protocol namedClass {
-    func getName() -> String
 }
