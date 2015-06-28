@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D9AD2C3B1B407B88001D6971 /* ImageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD2C3A1B407B88001D6971 /* ImageContentViewController.swift */; };
-		D9AD2C3D1B407CB6001D6971 /* ImageContViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD2C3C1B407CB6001D6971 /* ImageContViewController.swift */; };
+		D951DE8C1B40953300B2C54C /* ScrollContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951DE8B1B40953300B2C54C /* ScrollContentViewController.swift */; };
+		D951DE8E1B40961A00B2C54C /* HousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951DE8D1B40961A00B2C54C /* HousingViewController.swift */; };
 		D9B0A2C51B37143100D664B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A2C41B37143100D664B1 /* AppDelegate.swift */; };
 		D9B0A2C71B37143100D664B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A2C61B37143100D664B1 /* ViewController.swift */; };
 		D9B0A2CA1B37143100D664B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B0A2C81B37143100D664B1 /* Main.storyboard */; };
@@ -38,8 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D9AD2C3A1B407B88001D6971 /* ImageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContentViewController.swift; sourceTree = "<group>"; };
-		D9AD2C3C1B407CB6001D6971 /* ImageContViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContViewController.swift; sourceTree = "<group>"; };
+		D951DE8B1B40953300B2C54C /* ScrollContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollContentViewController.swift; sourceTree = "<group>"; };
+		D951DE8D1B40961A00B2C54C /* HousingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingViewController.swift; sourceTree = "<group>"; };
 		D9B0A2BF1B37143100D664B1 /* Pagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B0A2C31B37143100D664B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9B0A2C41B37143100D664B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,13 +104,13 @@
 				D9B0A2C41B37143100D664B1 /* AppDelegate.swift */,
 				D9D17A4F1B397A7F002907CE /* SubViewController.swift */,
 				D9D17A511B397BD9002907CE /* PageContainerViewController.swift */,
+				D951DE8D1B40961A00B2C54C /* HousingViewController.swift */,
 				D9B0A2C61B37143100D664B1 /* ViewController.swift */,
 				D9B0A2E41B3715B100D664B1 /* ContentViewController.swift */,
 				D9B0A2E81B3774F100D664B1 /* Extreme_Sport_Compilation.mp4 */,
 				D9B0A2E61B37681500D664B1 /* DynamicContentViewController.swift */,
+				D951DE8B1B40953300B2C54C /* ScrollContentViewController.swift */,
 				D9B0A2C81B37143100D664B1 /* Main.storyboard */,
-				D9AD2C3C1B407CB6001D6971 /* ImageContViewController.swift */,
-				D9AD2C3A1B407B88001D6971 /* ImageContentViewController.swift */,
 				D9B0A2CB1B37143100D664B1 /* Images.xcassets */,
 				D9B0A2CD1B37143100D664B1 /* LaunchScreen.xib */,
 				D9B0A2C21B37143100D664B1 /* Supporting Files */,
@@ -247,15 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9AD2C3B1B407B88001D6971 /* ImageContentViewController.swift in Sources */,
+				D951DE8E1B40961A00B2C54C /* HousingViewController.swift in Sources */,
 				D9B0A2E71B37681500D664B1 /* DynamicContentViewController.swift in Sources */,
 				D9B0A2C71B37143100D664B1 /* ViewController.swift in Sources */,
 				D9D17A501B397A7F002907CE /* SubViewController.swift in Sources */,
 				D9ECBA1A1B3F48EE006097DF /* StoryView.swift in Sources */,
 				D9B0A2E51B3715B100D664B1 /* ContentViewController.swift in Sources */,
 				D9B0A2C51B37143100D664B1 /* AppDelegate.swift in Sources */,
-				D9AD2C3D1B407CB6001D6971 /* ImageContViewController.swift in Sources */,
 				D9D17A521B397BD9002907CE /* PageContainerViewController.swift in Sources */,
+				D951DE8C1B40953300B2C54C /* ScrollContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

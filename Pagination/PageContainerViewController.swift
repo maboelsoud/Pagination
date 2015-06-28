@@ -157,8 +157,6 @@ class PVCImplementer: NSObject, UIPageViewControllerDataSource
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         
-        // TODO: change
-
         var index: Int
         if (self.pageImages != nil){
             var vc = viewController as! ContentViewController
@@ -190,6 +188,8 @@ class PVCImplementer: NSObject, UIPageViewControllerDataSource
         }
         
         return self.viewControllerAtIndex(index)
+        
+        
     }
     
 //    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {

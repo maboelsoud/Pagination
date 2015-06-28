@@ -13,12 +13,7 @@ class DynamicContentViewController: UIViewController, VidCallbacks{
     
     var views = [String:UIView]()
     
-//    @IBOutlet weak var imageView: UIImageView!
-//    @IBOutlet weak var titleLabel: UILabel!
-//    
     var pageIndex: Int!
-//    var titleText: String!
-//    var imageFile: String!
     
     var data = Dictionary<String,Any>()
     
@@ -56,7 +51,7 @@ class DynamicContentViewController: UIViewController, VidCallbacks{
         case .View:
             addView("jdio83m389fj3nf398", viewItem: data["view"] as! UIView, size: data["size"] as! CGRect)
         default:
-            debugPrintln("incorrect type")
+            debugPrint("incorrect type")
         }
     }
     
@@ -71,7 +66,7 @@ class DynamicContentViewController: UIViewController, VidCallbacks{
     
     func addButton(title: String, target: String, color: UIColor,size: CGRect){
         
-        var button = UIButton()
+        let button = UIButton()
         button.setTitle(title, forState: .Normal)
         button.setTitleColor(color, forState: .Normal)
         addView("s91j73v4i9d3", viewItem: button,size: size)
@@ -79,7 +74,7 @@ class DynamicContentViewController: UIViewController, VidCallbacks{
     }
     
     func addPhoto(name: String,size: CGRect){
-        var image = UIImageView()
+        let image = UIImageView()
         image.image = UIImage(named: name)
         image.contentMode = .ScaleAspectFit
         image.clipsToBounds = true
@@ -146,7 +141,7 @@ class DynamicContentViewController: UIViewController, VidCallbacks{
         if (self.views[identifier] == nil){
             self.views[identifier] = viewItem
         } else {
-            debugPrintln("you must create a unique key to add a view")
+            debugPrint("you must create a unique key to add a view")
         }
         
         viewItem.frame = size
