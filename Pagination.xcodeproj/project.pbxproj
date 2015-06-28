@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9AD2C3B1B407B88001D6971 /* ImageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD2C3A1B407B88001D6971 /* ImageContentViewController.swift */; };
+		D9AD2C3D1B407CB6001D6971 /* ImageContViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9AD2C3C1B407CB6001D6971 /* ImageContViewController.swift */; };
 		D9B0A2C51B37143100D664B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A2C41B37143100D664B1 /* AppDelegate.swift */; };
 		D9B0A2C71B37143100D664B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A2C61B37143100D664B1 /* ViewController.swift */; };
 		D9B0A2CA1B37143100D664B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9B0A2C81B37143100D664B1 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 		D9D17A5B1B3BFF6C002907CE /* ContentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D17A571B3BFF2E002907CE /* ContentTest.swift */; };
 		D9D17A601B3C0419002907CE /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A2E41B3715B100D664B1 /* ContentViewController.swift */; };
 		D9D17A611B3C0AC6002907CE /* DynamicContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A2E61B37681500D664B1 /* DynamicContentViewController.swift */; };
+		D9ECBA161B3F45B0006097DF /* StoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9ECBA151B3F45B0006097DF /* StoryView.xib */; };
+		D9ECBA1A1B3F48EE006097DF /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ECBA191B3F48EE006097DF /* StoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9AD2C3A1B407B88001D6971 /* ImageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContentViewController.swift; sourceTree = "<group>"; };
+		D9AD2C3C1B407CB6001D6971 /* ImageContViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageContViewController.swift; sourceTree = "<group>"; };
 		D9B0A2BF1B37143100D664B1 /* Pagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9B0A2C31B37143100D664B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9B0A2C41B37143100D664B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,8 @@
 		D9D17A4F1B397A7F002907CE /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		D9D17A511B397BD9002907CE /* PageContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContainerViewController.swift; sourceTree = "<group>"; };
 		D9D17A571B3BFF2E002907CE /* ContentTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentTest.swift; sourceTree = "<group>"; };
+		D9ECBA151B3F45B0006097DF /* StoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryView.xib; sourceTree = "<group>"; };
+		D9ECBA191B3F48EE006097DF /* StoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +99,8 @@
 		D9B0A2C11B37143100D664B1 /* Pagination */ = {
 			isa = PBXGroup;
 			children = (
+				D9ECBA151B3F45B0006097DF /* StoryView.xib */,
+				D9ECBA191B3F48EE006097DF /* StoryView.swift */,
 				D9B0A2C41B37143100D664B1 /* AppDelegate.swift */,
 				D9D17A4F1B397A7F002907CE /* SubViewController.swift */,
 				D9D17A511B397BD9002907CE /* PageContainerViewController.swift */,
@@ -99,6 +109,8 @@
 				D9B0A2E81B3774F100D664B1 /* Extreme_Sport_Compilation.mp4 */,
 				D9B0A2E61B37681500D664B1 /* DynamicContentViewController.swift */,
 				D9B0A2C81B37143100D664B1 /* Main.storyboard */,
+				D9AD2C3C1B407CB6001D6971 /* ImageContViewController.swift */,
+				D9AD2C3A1B407B88001D6971 /* ImageContentViewController.swift */,
 				D9B0A2CB1B37143100D664B1 /* Images.xcassets */,
 				D9B0A2CD1B37143100D664B1 /* LaunchScreen.xib */,
 				D9B0A2C21B37143100D664B1 /* Supporting Files */,
@@ -176,6 +188,7 @@
 		D9B0A2B71B37143100D664B1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Mohamed Abdalla";
 				TargetAttributes = {
@@ -214,6 +227,7 @@
 			files = (
 				D9B0A2E91B3774FF00D664B1 /* Extreme_Sport_Compilation.mp4 in Resources */,
 				D9B0A2CA1B37143100D664B1 /* Main.storyboard in Resources */,
+				D9ECBA161B3F45B0006097DF /* StoryView.xib in Resources */,
 				D9B0A2CF1B37143100D664B1 /* LaunchScreen.xib in Resources */,
 				D9B0A2CC1B37143100D664B1 /* Images.xcassets in Resources */,
 			);
@@ -233,11 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9AD2C3B1B407B88001D6971 /* ImageContentViewController.swift in Sources */,
 				D9B0A2E71B37681500D664B1 /* DynamicContentViewController.swift in Sources */,
 				D9B0A2C71B37143100D664B1 /* ViewController.swift in Sources */,
 				D9D17A501B397A7F002907CE /* SubViewController.swift in Sources */,
+				D9ECBA1A1B3F48EE006097DF /* StoryView.swift in Sources */,
 				D9B0A2E51B3715B100D664B1 /* ContentViewController.swift in Sources */,
 				D9B0A2C51B37143100D664B1 /* AppDelegate.swift in Sources */,
+				D9AD2C3D1B407CB6001D6971 /* ImageContViewController.swift in Sources */,
 				D9D17A521B397BD9002907CE /* PageContainerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
