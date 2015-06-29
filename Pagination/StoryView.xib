@@ -33,7 +33,7 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail3" translatesAutoresizingMaskIntoConstraints="NO" id="Leu-Ox-4Nz">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail3" translatesAutoresizingMaskIntoConstraints="NO" id="Leu-Ox-4Nz">
                                     <rect key="frame" x="112" y="98" width="377" height="165"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="165" id="4Jk-6B-TZv"/>
@@ -49,28 +49,28 @@
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVg-g5-Wni">
+                                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVg-g5-Wni" userLabel="Stripe1">
                                     <rect key="frame" x="0.0" y="838" width="600" height="7"/>
                                     <color key="backgroundColor" red="0.91931029040000001" green="0.1938558574" blue="0.19941484000000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="7" id="CgU-pp-bhd"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIS-1D-Xm2">
+                                <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIS-1D-Xm2" userLabel="Stripe2">
                                     <rect key="frame" x="0.0" y="823" width="600" height="7"/>
                                     <color key="backgroundColor" red="0.91931029040000001" green="0.1938558574" blue="0.19941484000000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="7" id="fwY-2r-ojX"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzK-9w-9Nn">
+                                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lzK-9w-9Nn" userLabel="Top">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="19"/>
                                     <color key="backgroundColor" red="0.91931029040000001" green="0.1938558574" blue="0.19941484000000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="19" id="WJp-Aa-zGX"/>
                                     </constraints>
                                 </view>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIV-oX-dUS">
+                                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIV-oX-dUS">
                                     <rect key="frame" x="112" y="298" width="377" height="1"/>
                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>

@@ -50,10 +50,25 @@ class ScrollContentViewController: UIViewController {
     func changeCover(part: parts, index: Int){
         
         if(part == .cover) {
-            // changes the cover based on what you want
+            // changes the cover to the appropriate photo
             var imageView = content.viewWithTag(1) as! UIImageView
             imageView.image = UIImage(named: CoverData.images[index])
             
+            // changes the detail photo to the appropriate photo
+            var detailImageView = content.viewWithTag(2) as! UIImageView
+            detailImageView.image = UIImage(named: CoverData.details[index])
+            
+            var color = CoverData.colors[index]
+            
+            // changes the bar and stripes to the appropriate photo
+            var topBar = content.viewWithTag(3)
+            topBar?.backgroundColor = color
+            
+            var stripe1 = content.viewWithTag(4)
+            stripe1?.backgroundColor = color
+            
+            var stripe2 = content.viewWithTag(5)
+            stripe2?.backgroundColor = color
         }
     }
     
@@ -65,6 +80,8 @@ class ScrollContentViewController: UIViewController {
 struct CoverData {
     
     static var images = ["photo1","photo2","photo3","photo4","photo5"]
+    static var details = ["detail1","detail2","detail3","detail4","detail5"]
+    static var colors = [UIColor.blueColor(), UIColor.brownColor(), UIColor.greenColor(), UIColor.redColor(),UIColor.yellowColor()]
     static var count:Int
         {
         get {
@@ -73,29 +90,3 @@ struct CoverData {
     }
     
 }
-
-struct example {
-    static var prop = 38
-}
-
-
-
-//class ContentViewController: UIViewController {
-//    
-//    @IBOutlet weak var imageView: UIImageView!
-//    @IBOutlet weak var titleLabel: UILabel!
-//    
-//    var pageIndex: Int!
-//    var titleText: String!
-//    var imageFile: String!
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        
-//        self.titleLabel.text = self.titleText
-//        self.imageView.image = UIImage(named: self.imageFile)
-//        //self.imageView.sizeThatFits(CGRectMake(16, 151, 10, 333).size)//= CGRectMake(16, 151, 368, 333)
-//        imageView.alpha = 0.5
-//    }
-//    
-//}

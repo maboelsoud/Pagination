@@ -311,14 +311,14 @@ legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbd-zN-sHx">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tbd-zN-sHx" userLabel="Stripe1">
                                                 <rect key="frame" x="0.0" y="838" width="377" height="7"/>
                                                 <color key="backgroundColor" red="0.91931029040000001" green="0.1938558574" blue="0.19941484000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="7" id="c27-aj-Ddi"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTK-mo-OIg">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTK-mo-OIg" userLabel="Stripe2">
                                                 <rect key="frame" x="0.0" y="823" width="377" height="7"/>
                                                 <color key="backgroundColor" red="0.91931029040000001" green="0.1938558574" blue="0.19941484000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
