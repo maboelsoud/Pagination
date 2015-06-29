@@ -8,7 +8,9 @@
 
 import UIKit
 
-class SubViewController: HousingViewController {
+class SubViewController:
+//  PageContainerViewController {
+    HousingViewController {
 
     
     
@@ -63,12 +65,8 @@ class SubViewController: HousingViewController {
     
     override func viewLoading() {
         
-        var pageTitles = NSArray(objects: "Explore", "Today Widget")
-//        var pageImages = NSArray(objects: "page1","page2")
         
-        var pageImages = ["page1","page2","page3","page4","page5"]
-        
-        self.integrator = PVCIntegrator(storyBoard: self.storyboard!, pageImages: pageImages)
+        self.integrator = PVCIntegrator(storyBoard: self.storyboard!, size: CoverData.count)
     }
 
 }

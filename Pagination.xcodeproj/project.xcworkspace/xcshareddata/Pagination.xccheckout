@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>9ED65022-D21A-489D-B787-9E78910349EC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Pagination</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F304E31C23603690BEED79A061D942C27808E44B</key>
 		<string>https://github.com/Mohamed-Abo-El-Soud/Pagination.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Pagination.xcodeproj</string>
+	<string>Pagination.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F304E31C23603690BEED79A061D942C27808E44B</key>

@@ -45,12 +45,12 @@ class PVCIntegrator: NSObject, UIPageViewControllerDataSource
 {
     
     var storyBoard: UIStoryboard!
-    var pageImages: NSArray!
+    var size: Int!
     var pageViewController: UIPageViewController!
     
-    init(storyBoard: UIStoryboard, pageImages: NSArray) {
+    init(storyBoard: UIStoryboard, size: Int) {
         self.storyBoard = storyBoard
-        self.pageImages = pageImages
+        self.size = size
         self.pageViewController = storyBoard.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
     }
@@ -62,16 +62,13 @@ class PVCIntegrator: NSObject, UIPageViewControllerDataSource
     
     func viewControllerAtIndex(index: Int)-> UIViewController
     {
-        
-        if((self.pageImages.count == 0) || (index >= self.pageImages.count)){
-            return ContentViewController()
+        if((size == 0) || (index >= size)){
+            return ScrollContentViewController()
         }
-            
-        var vc: ContentViewController =
-        self.storyBoard.instantiateViewControllerWithIdentifier("ContentViewController") as! ContentViewController
-            
-        vc.imageFile = self.pageImages[index] as! String
-            
+        
+        var vc: ScrollContentViewController =
+        self.storyBoard.instantiateViewControllerWithIdentifier("ScrollContentViewController") as! ScrollContentViewController
+        
         vc.pageIndex = index
             
         // this will trigger the content view controller initialization
@@ -83,7 +80,7 @@ class PVCIntegrator: NSObject, UIPageViewControllerDataSource
         var startVC:AnyObject
         
             
-        startVC = self.viewControllerAtIndex(0) as! ContentViewController
+        startVC = self.viewControllerAtIndex(0) as! ScrollContentViewController
         
         var viewControllers = NSArray(object: startVC)
         
@@ -94,11 +91,9 @@ class PVCIntegrator: NSObject, UIPageViewControllerDataSource
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         
-        // TODO: change
-        
         var index: Int
         
-        var vc = viewController as! ContentViewController
+        var vc = viewController as! ScrollContentViewController
         index = vc.pageIndex as Int
             
         
@@ -117,7 +112,7 @@ class PVCIntegrator: NSObject, UIPageViewControllerDataSource
         
         var index: Int
         
-        var vc = viewController as! ContentViewController
+        var vc = viewController as! ScrollContentViewController
         index = vc.pageIndex as Int
         
         
@@ -128,7 +123,7 @@ class PVCIntegrator: NSObject, UIPageViewControllerDataSource
         
         index++
         
-        if (index == self.pageImages.count){
+        if (index == size){
             return nil
         }
         

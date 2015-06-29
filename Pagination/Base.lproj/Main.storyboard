@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DfA-Qa-CCI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bIK-jv-jZ3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -515,10 +515,10 @@ legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium
             </objects>
             <point key="canvasLocation" x="3862.5" y="629"/>
         </scene>
-        <!--Scroll Content View Controller-->
+        <!--View Controller-->
         <scene sceneID="3Ha-Jk-e6v">
             <objects>
-                <viewController storyboardIdentifier="Suuucks" id="sxR-19-ETd" customClass="ScrollContentViewController" customModule="Pagination" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Suuucks" id="sxR-19-ETd" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RhK-r3-XjX"/>
                         <viewControllerLayoutGuide type="bottom" id="nOT-2J-BGj"/>
@@ -581,10 +581,6 @@ legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="377" height="1334"/>
-                    <connections>
-                        <outlet property="bodyText" destination="oRL-rp-IW9" id="4LE-1j-DeK"/>
-                        <outlet property="cover" destination="4Fj-8G-Hx1" id="yoo-wp-ckl"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LQG-7F-tOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -873,7 +869,7 @@ legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium
                             <constraint firstAttribute="trailing" secondItem="tgG-Eb-Fe3" secondAttribute="trailing" id="Geo-Oe-XVn"/>
                             <constraint firstItem="0bv-Ez-TTe" firstAttribute="width" secondItem="WZm-a8-Jl7" secondAttribute="width" id="Ku3-nq-at0"/>
                             <constraint firstItem="tgG-Eb-Fe3" firstAttribute="leading" secondItem="WZm-a8-Jl7" secondAttribute="leading" id="ScF-PC-HjA"/>
-                            <constraint firstItem="oq9-kq-nXz" firstAttribute="top" secondItem="tgG-Eb-Fe3" secondAttribute="bottom" id="VJF-Tf-dOY"/>
+                            <constraint firstItem="oq9-kq-nXz" firstAttribute="top" secondItem="tgG-Eb-Fe3" secondAttribute="bottom" id="chJ-Le-Q0b"/>
                             <constraint firstItem="tgG-Eb-Fe3" firstAttribute="top" secondItem="WZm-a8-Jl7" secondAttribute="top" id="es2-cS-Vjb"/>
                         </constraints>
                     </view>
@@ -883,6 +879,29 @@ legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5bC-vZ-F42" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4765.5" y="629"/>
+        </scene>
+        <!--Scroll Content View Controller-->
+        <scene sceneID="ioD-qx-lhL">
+            <objects>
+                <viewController storyboardIdentifier="ScrollContentViewController" id="xNC-2G-6qK" customClass="ScrollContentViewController" customModule="Pagination" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="p9p-HA-TOq"/>
+                        <viewControllerLayoutGuide type="bottom" id="5j3-pt-mVP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FgM-00-Vuh" customClass="CompoundStoryView" customModule="Pagination" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="377" height="1334"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="377" height="1334"/>
+                    <connections>
+                        <outlet property="content" destination="FgM-00-Vuh" id="ezg-v1-ie1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tA0-ft-DOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5231.5" y="629"/>
         </scene>
     </scenes>
     <resources>

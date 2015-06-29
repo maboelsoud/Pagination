@@ -65,7 +65,7 @@ import UIKit
         super.init(coder: aDecoder)
         
         
-        println( _stdlib_getDemangledTypeName(self))
+//        println( _stdlib_getDemangledTypeName(self))
         setup()
     }
     
@@ -84,11 +84,14 @@ import UIKit
     func loadViewFromNib() -> UIView
     {
         let bundle = NSBundle(forClass:self.dynamicType)
-        let nib = UINib(nibName: "StoryView", bundle: bundle)
+        let nib = UINib(nibName: self.getName(), bundle: bundle)
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         
         return view
     }
     
+    func getName() -> String {
+        return "StoryView"
+    }
     
 }

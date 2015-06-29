@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D9225FAD1B40BC5E00ADEFE5 /* CompoundStoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9225FAC1B40BC5E00ADEFE5 /* CompoundStoryView.xib */; };
+		D9225FAF1B40BCA700ADEFE5 /* CompoundStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9225FAE1B40BCA700ADEFE5 /* CompoundStoryView.swift */; };
 		D951DE8C1B40953300B2C54C /* ScrollContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951DE8B1B40953300B2C54C /* ScrollContentViewController.swift */; };
 		D951DE8E1B40961A00B2C54C /* HousingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D951DE8D1B40961A00B2C54C /* HousingViewController.swift */; };
 		D9B0A2C51B37143100D664B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B0A2C41B37143100D664B1 /* AppDelegate.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D9225FAC1B40BC5E00ADEFE5 /* CompoundStoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompoundStoryView.xib; sourceTree = "<group>"; };
+		D9225FAE1B40BCA700ADEFE5 /* CompoundStoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundStoryView.swift; sourceTree = "<group>"; };
 		D951DE8B1B40953300B2C54C /* ScrollContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollContentViewController.swift; sourceTree = "<group>"; };
 		D951DE8D1B40961A00B2C54C /* HousingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousingViewController.swift; sourceTree = "<group>"; };
 		D9B0A2BF1B37143100D664B1 /* Pagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +105,8 @@
 			children = (
 				D9ECBA151B3F45B0006097DF /* StoryView.xib */,
 				D9ECBA191B3F48EE006097DF /* StoryView.swift */,
+				D9225FAE1B40BCA700ADEFE5 /* CompoundStoryView.swift */,
+				D9225FAC1B40BC5E00ADEFE5 /* CompoundStoryView.xib */,
 				D9B0A2C41B37143100D664B1 /* AppDelegate.swift */,
 				D9D17A4F1B397A7F002907CE /* SubViewController.swift */,
 				D9D17A511B397BD9002907CE /* PageContainerViewController.swift */,
@@ -228,6 +234,7 @@
 				D9B0A2E91B3774FF00D664B1 /* Extreme_Sport_Compilation.mp4 in Resources */,
 				D9B0A2CA1B37143100D664B1 /* Main.storyboard in Resources */,
 				D9ECBA161B3F45B0006097DF /* StoryView.xib in Resources */,
+				D9225FAD1B40BC5E00ADEFE5 /* CompoundStoryView.xib in Resources */,
 				D9B0A2CF1B37143100D664B1 /* LaunchScreen.xib in Resources */,
 				D9B0A2CC1B37143100D664B1 /* Images.xcassets in Resources */,
 			);
@@ -256,6 +263,7 @@
 				D9B0A2C51B37143100D664B1 /* AppDelegate.swift in Sources */,
 				D9D17A521B397BD9002907CE /* PageContainerViewController.swift in Sources */,
 				D951DE8C1B40953300B2C54C /* ScrollContentViewController.swift in Sources */,
+				D9225FAF1B40BCA700ADEFE5 /* CompoundStoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
